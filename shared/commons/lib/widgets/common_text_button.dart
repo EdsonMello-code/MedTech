@@ -23,7 +23,7 @@ class CommonTextButton extends StatelessWidget {
           color: onPressed == null
               ? context.commonColors.textColor
               : context.commonColors.mainColor,
-          fontSize: 14,
+          fontSize: 14.p,
           fontFamily: 'Overpass',
           fontWeight: FontWeight.w400,
         ).merge(

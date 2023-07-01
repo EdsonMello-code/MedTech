@@ -1,4 +1,4 @@
-import 'package:commons/theme/extensions/common_color_extension.dart';
+import 'package:commons/main.dart';
 import 'package:flutter/material.dart';
 
 class CommonButton extends StatelessWidget {
@@ -19,7 +19,7 @@ class CommonButton extends StatelessWidget {
         fixedSize: MaterialStatePropertyAll(
           Size(
             context.screenSize.width,
-            50,
+            50.w,
           ),
         ),
         backgroundColor: MaterialStatePropertyAll(

@@ -1,4 +1,4 @@
-import 'package:commons/theme/extensions/common_color_extension.dart';
+import 'package:commons/main.dart';
 import 'package:commons_dependencies/main.dart';
 import 'package:flutter/material.dart';
 
@@ -21,9 +21,9 @@ class CommonText extends StatelessWidget {
     return CommonText(
       text,
       align: align,
-      style: const TextStyle(
-        color: Color(0xFF090F47),
-        fontSize: 24,
+      style: TextStyle(
+        color: const Color(0xFF090F47),
+        fontSize: 24.p,
         fontWeight: FontWeight.w700,
       ),
     );
@@ -36,9 +36,9 @@ class CommonText extends StatelessWidget {
     return CommonText(
       text,
       align: align,
-      style: const TextStyle(
-        color: Color(0x72090F47),
-        fontSize: 16,
+      style: TextStyle(
+        color: const Color(0x72090F47),
+        fontSize: 16.p,
         fontWeight: FontWeight.w300,
       ),
     );

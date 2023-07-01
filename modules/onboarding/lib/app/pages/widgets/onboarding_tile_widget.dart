@@ -16,22 +16,22 @@ class OnboardingTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: context.screenSize.width * .257),
+      padding: EdgeInsets.only(top: 100.h),
       child: Column(
         children: [
           Center(
             child: SizedBox(
-              width: 256,
-              height: 284,
+              width: 256.w,
+              height: 284.w,
               child: image,
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 50.0),
+            padding: EdgeInsets.only(top: 50.0.h),
             child: Column(
               children: [
                 SizedBox(
-                  width: 238,
+                  width: 238.w,
                   child: CommonText.title(
                     title,
                     align: TextAlign.center,
@@ -39,8 +39,8 @@ class OnboardingTileWidget extends StatelessWidget {
                 ),
                 Center(
                   child: SizedBox(
-                    width: 254,
-                    height: 72,
+                    width: 254.w,
+                    height: 72.h,
                     child: CommonText.paragraph(
                       description,
                       align: TextAlign.center,

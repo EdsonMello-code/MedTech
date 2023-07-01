@@ -18,7 +18,7 @@ class CommonDots extends StatelessWidget {
       children: List.generate(
         dotsLenght,
         (index) => Padding(
-          padding: const EdgeInsets.only(right: 8.0),
+          padding: EdgeInsets.only(right: 8.0.w),
           child: TweenAnimationBuilder<double>(
               duration: const Duration(
                 milliseconds: 1000,
@@ -29,7 +29,7 @@ class CommonDots extends StatelessWidget {
               ),
               builder: (context, interpolation, _) {
                 return CommonDot(
-                  size: const Size(4, 4),
+                  size: Size(4.w, 4.w),
                   color: currentIndexDot < index
                       ? context.commonColors.textColor
                       : context.commonColors.mainColor,

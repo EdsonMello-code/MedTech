@@ -14,8 +14,8 @@ class CommonDot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: size?.width ?? 12.24,
-      height: size?.height ?? 12.24,
+      width: size?.width ?? 12.24.w,
+      height: size?.height ?? 12.24.h,
       decoration: BoxDecoration(
         color: color ?? context.commonColors.textColor,
         shape: BoxShape.circle,

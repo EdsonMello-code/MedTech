@@ -56,16 +56,17 @@ class _OnboardingPageState extends State<OnboardingPage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(
-                left: 24.0,
-                right: 24.0,
+              padding: EdgeInsets.only(
+                left: 24.0.w,
+                right: 24.0.w,
               ),
               child: Padding(
-                padding: const EdgeInsets.only(bottom: 30.0),
+                padding: EdgeInsets.only(bottom: 30.0.h),
                 child: AnimatedBuilder(
                     animation: pageController,
                     builder: (context, _) {
                       final page = (pageController.page?.floor()) ?? 0;
+                      final isLastPage = pages.length == (page + 1);
 
                       return Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -89,16 +90,17 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           ),
                           CommonTextButton(
                             'Next',
-                            onPressed: pages.length != (page + 1)
-                                ? () {
-                                    pageController.nextPage(
-                                      duration: const Duration(
-                                        milliseconds: 600,
-                                      ),
-                                      curve: Curves.decelerate,
-                                    );
-                                  }
-                                : null,
+                            onPressed: () {
+                              if (isLastPage) {
+                              } else {
+                                pageController.nextPage(
+                                  duration: const Duration(
+                                    milliseconds: 600,
+                                  ),
+                                  curve: Curves.decelerate,
+                                );
+                              }
+                            },
                           )
                         ],
                       );
