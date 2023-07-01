@@ -1,7 +1,8 @@
-import 'package:commons/routes/common_routes.dart';
+import 'package:commons/main.dart';
 import 'package:commons_dependencies/main.dart';
-import 'package:onboarding/app/onboarding_module.dart';
-import 'package:splash_module/splash_module.dart';
+import 'package:onboarding/main.dart';
+import 'package:splash_module/main.dart';
+import 'package:welcome_module/main.dart';
 
 class AppModule extends Module {
   @override
@@ -13,6 +14,10 @@ class AppModule extends Module {
     ModuleRoute(
       CommonRoutes.oboardingRoute,
       module: OnboardingModule(),
+    ),
+    ModuleRoute(
+      CommonRoutes.initialRoute,
+      module: WelcomeModule(),
     ),
   ];
 }

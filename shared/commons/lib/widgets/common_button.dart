@@ -4,11 +4,15 @@ import 'package:flutter/material.dart';
 class CommonButton extends StatelessWidget {
   final Widget child;
   final VoidCallback? onPressed;
+  final Color? backgroundColor;
+  final OutlinedBorder? border;
 
   const CommonButton({
     super.key,
     required this.child,
     this.onPressed,
+    this.backgroundColor,
+    this.border,
   });
 
   @override
@@ -23,7 +27,10 @@ class CommonButton extends StatelessWidget {
           ),
         ),
         backgroundColor: MaterialStatePropertyAll(
-          context.commonColors.mainColor,
+          backgroundColor ?? context.commonColors.mainColor,
+        ),
+        shape: MaterialStatePropertyAll(
+          border,
         ),
       ),
       onPressed: onPressed,

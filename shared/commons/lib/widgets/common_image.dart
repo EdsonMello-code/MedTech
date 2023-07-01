@@ -1,3 +1,4 @@
+import 'package:commons/main.dart';
 import 'package:commons_dependencies/main.dart';
 import 'package:flutter/material.dart';
 
@@ -46,6 +47,31 @@ class CommonImage extends StatelessWidget {
     return const CommonImage(
       imageUrl: 'packages/commons/assets/onboarding3.svg',
       isSvg: true,
+    );
+  }
+
+  factory CommonImage.google() {
+    return const CommonImage(
+      imageUrl: 'packages/commons/assets/google.svg',
+      isSvg: true,
+    );
+  }
+
+  factory CommonImage.facebook() {
+    return const CommonImage(
+      imageUrl: 'packages/commons/assets/facebook.svg',
+      isSvg: true,
+    );
+  }
+
+  factory CommonImage.signupBackground() {
+    return CommonImage(
+      imageUrl: 'packages/commons/assets/signup_background.png',
+      isSvg: false,
+      size: Size(
+        258.w,
+        258.w,
+      ),
     );
   }
 

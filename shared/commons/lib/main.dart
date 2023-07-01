@@ -4,6 +4,8 @@ export './theme/common_theme.dart';
 export './theme/extensions/common_color_extension.dart';
 export './theme/extensions/common_dimensions.dart';
 export './widgets/common_dots.dart';
+export './widgets/common_facebook_button.dart';
+export './widgets/common_google_button.dart';
 export './widgets/common_image.dart';
 export './widgets/common_text_button.dart';
 export 'widgets/common_dot.dart';

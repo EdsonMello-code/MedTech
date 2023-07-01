@@ -4,11 +4,13 @@ class CommonColors extends ThemeExtension<CommonColors> {
   final Color mainColor;
   final Color titleTextColor;
   final Color textColor;
+  final Color whiteColor;
 
   const CommonColors({
     required this.mainColor,
     required this.titleTextColor,
     required this.textColor,
+    required this.whiteColor,
   });
 
   @override
@@ -17,12 +19,13 @@ class CommonColors extends ThemeExtension<CommonColors> {
     Color? color,
     Color? tileTextColor,
     Color? textColor,
+    Color? whiteColor,
   }) {
     return CommonColors(
-      mainColor: mainColor ?? this.mainColor,
-      titleTextColor: tileTextColor ?? titleTextColor,
-      textColor: textColor ?? this.textColor,
-    );
+        mainColor: mainColor ?? this.mainColor,
+        titleTextColor: tileTextColor ?? titleTextColor,
+        textColor: textColor ?? this.textColor,
+        whiteColor: whiteColor ?? this.whiteColor);
   }
 
   @override
@@ -40,6 +43,11 @@ class CommonColors extends ThemeExtension<CommonColors> {
       textColor: Color.lerp(
         textColor,
         other.textColor,
+        t,
+      )!,
+      whiteColor: Color.lerp(
+        whiteColor,
+        other.whiteColor,
         t,
       )!,
     );

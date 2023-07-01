@@ -1,5 +1,6 @@
-import 'package:commons/theme/common_colors.dart';
 import 'package:flutter/material.dart';
+
+import '../main.dart';
 
 class CommonTheme {
   static final theme = ThemeData(
@@ -12,6 +13,7 @@ class CommonTheme {
         mainColor: Color(0xFF4157FF),
         titleTextColor: Color(0xFF090F47),
         textColor: Color(0x72090F47),
+        whiteColor: Colors.white,
       )
     ],
   );

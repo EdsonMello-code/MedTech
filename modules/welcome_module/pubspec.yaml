@@ -1,8 +1,8 @@
-name: core
+name: welcome_module
 description: A new Flutter package project.
 version: 0.0.1
 homepage:
-publish_to: none
+publish_to: none 
 
 environment:
   sdk: '>=3.0.5 <4.0.0'
@@ -11,23 +11,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  
-  commons_dependencies:
-    path: '../shared/commons_dependencies'
 
   commons:
-    path: '../shared/commons'
+    path: ../../shared/commons
 
-  splash_module:
-    path: '../modules/splash_module'
-
-  onboarding: 
-    path: '../modules/onboarding'
-
-  welcome_module: 
-    path: '../modules/welcome_module'
-
-  
+  commons_dependencies:
+    path: ../../shared/commons_dependencies
+    
 
 dev_dependencies:
   flutter_test:
@@ -41,7 +31,10 @@ dev_dependencies:
 flutter:
 
   # To add assets to your package, add an assets section, like this:
-  # assets:
+  assets:
+    - packages/commons/assets/signup_background.png
+    - 'packages/commons/assets/facebook.svg'
+    - 'packages/commons/assets/google.svg'
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   #
