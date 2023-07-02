@@ -1,3 +1,4 @@
+import 'package:authentication/app/authentication_module.dart';
 import 'package:commons/main.dart';
 import 'package:commons_dependencies/main.dart';
 import 'package:onboarding/main.dart';
@@ -16,8 +17,12 @@ class AppModule extends Module {
       module: OnboardingModule(),
     ),
     ModuleRoute(
-      CommonRoutes.initialRoute,
+      CommonRoutes.welcomeRoute,
       module: WelcomeModule(),
+    ),
+    ModuleRoute(
+      CommonRoutes.authenticationRoute,
+      module: AuthenticationModule(),
     ),
   ];
 }

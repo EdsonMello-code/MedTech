@@ -1,5 +1,5 @@
 import 'package:commons_dependencies/main.dart';
-import 'package:splash_module/pages/splash_page.dart';
+import 'package:splash_module/app/pages/splash_page.dart';
 
 class SplashModule extends Module {
   @override

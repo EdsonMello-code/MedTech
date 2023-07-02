@@ -1,4 +1,4 @@
-name: core
+name: authentication
 description: A new Flutter package project.
 version: 0.0.1
 homepage:
@@ -12,25 +12,11 @@ dependencies:
   flutter:
     sdk: flutter
   
-  commons_dependencies:
-    path: '../shared/commons_dependencies'
-
   commons:
-    path: '../shared/commons'
+    path: ../../shared/commons
 
-  splash_module:
-    path: '../modules/splash_module'
-
-  onboarding: 
-    path: '../modules/onboarding'
-
-  welcome_module: 
-    path: '../modules/welcome_module'
-
-  authentication: 
-    path: '../modules/authentication'
-
-  
+  commons_dependencies:
+    path: ../../shared/commons_dependencies  
 
 dev_dependencies:
   flutter_test:
@@ -44,8 +30,11 @@ dev_dependencies:
 flutter:
 
   # To add assets to your package, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - packages/commons/assets/avatar.svg
+    - packages/commons/assets/security.svg
+
+    
   #   - images/a_dot_ham.jpeg
   #
   # For details regarding assets in packages, see

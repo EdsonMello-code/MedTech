@@ -7,6 +7,7 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Modular.setInitialRoute(CommonRoutes.authenticationRoute);
     return MaterialApp.router(
       routeInformationParser: Modular.routeInformationParser,
       routerDelegate: Modular.routerDelegate,

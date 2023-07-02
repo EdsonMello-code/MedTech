@@ -37,6 +37,10 @@ flutter:
     - lib/assets/onboarding.png
     - lib/assets/google.svg
     - lib/assets/facebook.svg
+    - lib/assets/arrow_back.svg
+    - lib/assets/avatar.svg
+    - lib/assets/security.svg
+
     
   #   - images/a_dot_ham.jpeg
   #

@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "../../../../base_app"
+		},
+		{
+			"path": "../../../../core"
+		},
+		{
+			"path": "../../../../shared/commons"
+		},
+		{
+			"path": "../../../../shared/commons_dependencies"
+		},
+		{
+			"path": "../../../splash_module"
+		},
+		{
+			"path": "../../../onboarding"
+		},
+		{
+			"path": "../../../welcome_module"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}

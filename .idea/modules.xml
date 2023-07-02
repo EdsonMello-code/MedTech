@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/modules/authentication/melos_authentication.iml" filepath="$PROJECT_DIR$/modules/authentication/melos_authentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base_app/melos_base_app.iml" filepath="$PROJECT_DIR$/base_app/melos_base_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shared/commons/melos_commons.iml" filepath="$PROJECT_DIR$/shared/commons/melos_commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shared/commons_dependencies/melos_commons_dependencies.iml" filepath="$PROJECT_DIR$/shared/commons_dependencies/melos_commons_dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/melos_core.iml" filepath="$PROJECT_DIR$/core/melos_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/onboarding/melos_onboarding.iml" filepath="$PROJECT_DIR$/modules/onboarding/melos_onboarding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/splash_module/melos_splash_module.iml" filepath="$PROJECT_DIR$/modules/splash_module/melos_splash_module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/welcome_module/melos_welcome_module.iml" filepath="$PROJECT_DIR$/modules/welcome_module/melos_welcome_module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_medtech.iml" filepath="$PROJECT_DIR$/melos_medtech.iml" />
+    </modules>
+  </component>
+</project>

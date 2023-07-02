@@ -64,6 +64,35 @@ class CommonImage extends StatelessWidget {
     );
   }
 
+  factory CommonImage.arrowBack() {
+    return const CommonImage(
+      imageUrl: 'packages/commons/assets/arrow_back.svg',
+      isSvg: true,
+    );
+  }
+
+  factory CommonImage.avatar() {
+    return CommonImage(
+      imageUrl: 'packages/commons/assets/avatar.svg',
+      isSvg: true,
+      size: Size(
+        25.w,
+        25.h,
+      ),
+    );
+  }
+
+  factory CommonImage.security() {
+    return CommonImage(
+      imageUrl: 'packages/commons/assets/security.svg',
+      size: Size(
+        25.w,
+        25.h,
+      ),
+      isSvg: true,
+    );
+  }
+
   factory CommonImage.signupBackground() {
     return CommonImage(
       imageUrl: 'packages/commons/assets/signup_background.png',
